@@ -17,6 +17,7 @@
 	<script defer charset="utf-8" type="text/javascript" src="js/game/tab.js"></script>
 </head>
 <body id="body">
+	<a href="index.html" target="_newtab">English</a> | <a href="index-zh.html" target="_newtab">中文</a><br>
 	<p>You start off with 豆 (bean)<br>
 	You divide it into 一口丷一<br>
 	You decide to use the complex spelling of 一, 壹 and end up with 壹口丷壹<br>
@@ -28,7 +29,7 @@
 		<button onclick="player.navigation.tab = 'Auto'" id="autotabbtn" style="display: none;">Autowriters</button>
 		<button onclick="player.navigation.tab = 'Shrink'" id="shrinktabbtn" style="display: none;">Shrink</button>
 		<button onclick="player.navigation.tab = 'ShrinkPow'" id="shrinkpowtabbtn" style="display: none;">Shrink Power</button>
-		<button onclick="player.navigation.tab = 'ShrinkTree'" id="shrinktreetabbtn" style="display: none;">Shrink Tree</button>
+		<button onclick="player.navigation.tab = 'ShrinkTree'" id="shrinktreetabbtn" style="display: none;">Skill Tree</button>
 		<button onclick="player.navigation.tab = 'Options'">Options</button>
 	</div>
 	<button class="prestigebtn" id="shrinkbtn" onclick="shrink()" style="display: none; right: 0;">Shrink all characters into <span id="shrinkamt">1</span> 豆 singularity</button>
@@ -101,7 +102,7 @@
 				<td><button class="spupgradebtn" id="sing" onclick="buySPup('11', '1e3')">Gain more singularities based on singularities<br>Currently: ×<span id="singboost">1.00</span><br>Cost: 1.00e3 shrink power</button></td>
 				<td><button class="spupgradebtn" id="morepow" onclick="buySPup('12', '2e3')">Gain five times as much shrink power<br>Cost: 2.00e3 shrink power</button></td>
 				<td><button class="spupgradebtn" id="powboost" onclick="buySPup('13', '2e4')">Shrink power effect is ^3 instead of ^2<br>Cost: 2.00e4 shrink power</button></td>
-				<td><button class="spupgradebtn" id="unlocktree" onclick="buySPup('14', '1e5')">Unlock skill tree<br>Cost: 1.00e5 shrink power</button></td>
+				<td><button class="spupgradebtn" id="unlocktree" onclick="buySPup('14', '1e5')">Unlock Skill Tree<br>Cost: 1.00e5 shrink power</button></td>
 			</tr>
 		</tbody></table>
 	</div>
@@ -130,7 +131,7 @@
 				<div style="width: 0.4em"></div>
 				<button class="treebtn" id="53r42c2500" onclick="buyStudy('53', '1e2500', '42')">Finish the game...<br>Cost: 1.00e2500 士</button>
 				<div style="width: 0.4em"></div>
-				<button class="treebtn" id="54r42069c15000000000" onclick="buyStudy('54', '1e1500000000', '42')">This is a center placeholder button.<br>Cost: 1.00e1500 士</button>
+				<button class="treebtn" id="54r42c15000000" onclick="buyStudy('54', '1e15000000', '42')">This is a center placeholder button.<br>Cost: 1.00e15000000 士</button>
 			</div>
 		</div>
 		<br><br><br><br>

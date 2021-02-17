@@ -17,7 +17,7 @@
 	<script defer charset="utf-8" type="text/javascript" src="js/game/tab.js"></script>
 </head>
 <body id="body">
-	<a href="index.html" target="_newtab">English</a> | <a href="index-zh.html" target="_newtab">中文</a><br>
+	<a href="index.html" target="_newtab">English</a> | <a href="index-zh.html" target="_newtab">中文</a> | <a href="https://github.com/GSUI5051/Bean-Incremental" target="_newtab">源代码</a><br>
 	<p>从「豆」开始<br>
 	把它分成：一口丷一<br>
 	然后把数字「一」用大写数字「壹」表示, 就有了：壹口丷壹<br>
@@ -59,13 +59,13 @@
 			<tr id="secondrow" style="display: none;">
 				<td><button class="upgradebtn" id="upautospeed" onclick="buyUp('21', '1e9', 'dirt')">「士」字的数量提高自动书写器的工作速度<br>目前加成：提高 <span id="autospeedboost">1.00</span> 倍<br>价格： <span id="upautospeedcost">1.00e9</span> 士</button></td>
 				<td><button class="upgradebtn" id="bulkmore" onclick="buyUp('22', '1e12', 'legs')">获得双倍的自动书写器<br>价格： <span id="bulkmorecost">1.00e12</span> 丷</button></td>
-				<td><button class="upgradebtn" id="replicate" onclick="buyUp('23', '1e20', 'cap')">Autowriters replicate themselves at a rate of 0.01 auto per auto per sec<br>价格： <span id="replicatecost">1.00e20</span> 冖</button></td>
-				<td><button class="upgradebtn" id="removeautocap" onclick="buyUp('24', '1e30', 'cmone')">Remove the cap from autowriters, but makes them get slower as you get more characters. Upgrades to the autowriter cap affect their speed instead.<br>价格： <span id="removeautocapcost">1.00e30</span> 壹</button></td>
+				<td><button class="upgradebtn" id="replicate" onclick="buyUp('23', '1e20', 'cap')">每个自动书写器以每秒 0.01 个的速度生产其自身<br>价格： <span id="replicatecost">1.00e20</span> 冖</button></td>
+				<td><button class="upgradebtn" id="removeautocap" onclick="buyUp('24', '1e30', 'cmone')">移除自动书写器的软上限，然而，汉字越多，自动书写器的工作速度越慢。与自动书写器上限有关的升级影响它们的工作速度。<br>价格： <span id="removeautocapcost">1.00e30</span> 壹</button></td>
 			</tr>
 			<tr id="thirdrow" style="display: none;">
 				<td><button class="upgradebtn" id="upautospeed2" onclick="buyUp('31', '1e1000', 'dirt')">基于压缩次数，提高自动书写器的工作速度<br>目前加成：提高 <span id="autospeedboost2">1.00</span> 倍<br>价格： <span id="upautospeed2cost">1.00e1000</span> 士</button></td>
 				<td><button class="upgradebtn" id="upautospeed3" onclick="buyUp('32', '1e1500', 'dirt')">自动书写器的工作速度为原来的 100 倍<br>价格： <span id="upautospeed3cost">1.00e1500</span> 士</button></td>
-				<td><button class="upgradebtn" id="replicate2" onclick="buyUp('33', '1e2000', 'cap')">Autowriters replicate at 0.05 per sec instead of 0.01<br>价格： <span id="replicate2cost">1.00e2000</span> 冖</button></td>
+				<td><button class="upgradebtn" id="replicate2" onclick="buyUp('33', '1e2000', 'cap')">每个自动书写器以每秒 0.05 个的速度生产其自身<br>价格： <span id="replicate2cost">1.00e2000</span> 冖</button></td>
 				<td><button class="upgradebtn" id="givedysideas" onclick="buyUp('34', '1e30000', 'cmone')">灵感没了，帮帮作者<br>价格： <span id="givedysideascost">1.00e30000</span> 壹</button></td>
 			</tr>
 		</tbody></table>
@@ -75,7 +75,7 @@
 		<br><br>
 		<table><tbody>
 			<tr>
-				<td><button class="supgradebtn" id="shrinkprice" onclick="buySup('11', '1')">All autowriter upgrades are 5x as cheap, autowriter purchases scale 40% less<br>价格： 1 豆奇点</button></td>
+				<td><button class="supgradebtn" id="shrinkprice" onclick="buySup('11', '1')">所有自动书写器升级的价格便宜 5 倍，自动书写器的价格增速降低 40%<br>价格： 1 豆奇点</button></td>
 				<td><button class="supgradebtn" id="moreauto" onclick="buySup('12', '1')">解锁更多的自动书写器升级<br>价格： 1 豆奇点</button></td>
 				<td><button class="supgradebtn" id="keepauto" onclick="buySup('13', '10')">所有的自动书写器和自动书写器升级在压缩后保留<br>价格： 10 豆奇点</button></td>
 				<td><button class="supgradebtn" id="unlockshrinkpow" onclick="buySup('14', '20')">解锁压缩之力<br>价格： 20 豆奇点</button></td>
@@ -83,7 +83,7 @@
 			<tr id="secondsing" style="display: none;">
 				<td><button class="supgradebtn" id="moresing" onclick="buySup('21', '1e100')">基于压缩次数，提高豆奇点获得量<br>目前加成：提高 <span id="singboost2">1.00</span> 倍<br>价格： 1.00e100 豆奇点</button></td>
 				<td><button class="supgradebtn" id="morepower" onclick="buySup('22', '1e150')">基于豆奇点数量，提高压缩之力的获得量<br>目前加成：提高 <span id="shringpowboost">1.00</span> 倍<br>价格： 1.00e150 豆奇点</button></td>
-				<td><button class="supgradebtn" id="keepsing" onclick="buySup('23', '1e230')">Gain 1% of singularity gained per second<br>价格： 1.00e230 豆奇点</button></td>
+				<td><button class="supgradebtn" id="keepsing" onclick="buySup('23', '1e230')">每秒获得已有豆奇点的 1%<br>价格： 1.00e230 豆奇点</button></td>
 				<td><button class="supgradebtn" id="helpdysweight" onclick="buySup('24', '1e2000')">给作者投食<br>价格： 1.00e2000 豆奇点</button></td>
 			</tr>
 		</tbody></table>
@@ -115,7 +115,7 @@
 				<button class="treebtn" id="22r11c1000" onclick="buyStudy('22', '1e1000', '11')">自动购买自动书写器和压缩器<br>价格： 1.00e1000 士</button>
 			</div>
 			<br><div style="display: flex; align-items: center; justify-content: center;">
-				<button class="treebtn" id="31r21c2000" onclick="buyStudy('31', '1e2000', '21')">Shrinkers are 3 times as effective for every 10 bought, shrink pow effect is ^4<br>价格： 1.00e2000 士</button>
+				<button class="treebtn" id="31r21c2000" onclick="buyStudy('31', '1e2000', '21')">每购买 10 个压缩器，压缩器的效果变为原来的 3 倍，压缩之力的效果变为原来的 4 次方<br>价格： 1.00e2000 士</button>
 				<div style="width: 0.4em"></div>
 				<button class="treebtn" id="32r22c2000" onclick="buyStudy('32', '1e2000', '22')">解锁第三行自动书写器升级<br>价格： 1.00e2000 士</button>
 			</div>

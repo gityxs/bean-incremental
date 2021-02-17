@@ -1,4 +1,4 @@
-English | 中文
+[English](https://github.com/GSUI5051/Bean-Incremental#bean-incremental) | [中文](https://github.com/GSUI5051/Bean-Incremental#%E8%B1%86%E5%A2%9E%E9%87%8F)
 
 # Bean Incremental
 An incremental game made by [Dystopia-user181](https://github.com/Dystopia-user181/Bean-Incremental). It's the 1st incremental game related to Chinese Characters I've ever seen. I fixed some bugs, and translate it to Chinese. 

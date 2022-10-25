@@ -1,0 +1,141 @@
+body {
+	background-color: #122;
+	color: #fff;
+	font-family: Lucida Console;
+	transition: all 1s;
+	position: absolute;
+	height: 97vh;
+	width: 98vw;
+	font-size: 16px;
+}
+* {
+	font-size: 1em;
+}
+button {
+	background-color: #122;
+	color: #fff;
+	font-family: Lucida Console;
+	outline: none;
+	border: 0.125em solid #fff;
+	opacity: 0.7;
+	font-size: 0.95em;
+}
+button:disabled {
+	background-color: #555;
+}
+
+.item {
+	color: #56d;
+}
+#resources {
+	font-size: 1.25em;
+}
+
+button.buybtn:disabled {
+	border: 0.125em solid #f54;
+}
+button.buybtn:enabled {
+	border: 0.125em solid #3f4;
+}
+button.upgradebtn:enabled {
+	border: 0.125em dotted #fc4;
+}
+button.upgradebtn:disabled {
+	border: 0.125em solid #f00;
+}
+button.upgradebtn.bought {
+	border: 0.125em solid #d96;
+	background-color: #1a3;
+	opacity: 1;
+}
+button.upgradebtn {
+	height: 8em;
+	width: 100%;
+}
+.optionsbtn {
+	width: 20%;
+	height: 3.125em;
+	font-size: 1.5em;
+	border: none;
+	box-shadow: 0px 0px 0.375em 0.125em #5df;
+}
+
+.prestigebtn {
+	height: 5em;
+	width: 10em;
+	position: absolute;
+	transform: translateY(-100%);
+}
+.prestigebtn:enabled {
+	border-color: #ce4;
+}
+.prestigebtn:disabled {
+	border-color: #b08;
+}
+
+button.supgradebtn:enabled {
+	border: 0.125em dotted #882;
+}
+button.supgradebtn:disabled {
+	border: 0.125em solid #f00;
+}
+button.supgradebtn.bought {
+	border: 0.125em solid #ff5;
+	background-color: #293;
+	opacity: 1;
+}
+button.supgradebtn {
+	height: 8em;
+	width: 100%;
+}
+
+button.spupgradebtn:enabled {
+	border: 0.125em dashed #8d2;
+}
+button.spupgradebtn:disabled {
+	border: 0.125em solid #f44;
+}
+button.spupgradebtn.bought {
+	border: 0.125em solid #ff5;
+	background-color: #060;
+	opacity: 1;
+}
+button.spupgradebtn {
+	height: 8em;
+	width: 100%;
+}
+
+button.treebtn:enabled {
+	border: 0.125em solid #b49;
+}
+button.treebtn:disabled {
+	border: 0.125em solid #f00;
+	background: #444;
+}
+button.treebtn.bought {
+	border: 0.125em solid #312;
+	background-color: #624;
+	opacity: 1;
+}
+button.treebtn {
+	font-size: 0.9em;
+	height: 6em;
+	width: 15em;
+}
+
+td {
+	width: 22%;
+}
+tr {
+	width: 100%;
+}
+table {
+	width: 98%;
+}
+
+button:hover {
+	opacity: 1;
+}
+button:active {
+	background-color: #344;
+}
